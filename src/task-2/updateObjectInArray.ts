@@ -1,10 +1,10 @@
-export interface MyObject{
+export interface ObjectShape{
     id: number;
     title: string;
     text: string;
 }
 
-export const arr: MyObject[] = [
+export const arr: ObjectShape[] = [
     {
         id: 1,
         title: 'title1',
@@ -22,12 +22,11 @@ export const arr: MyObject[] = [
     },
 ]
 
-export function updateObjectInArray<MyObject>(initialArray: Array<MyObject>,
-                                          key: keyof MyObject,
+export function updateObjectInArray<ObjectShape>(initialArray: Array<ObjectShape>,
+                                          key: keyof ObjectShape,
                                           value: string | number,
-                                          patch: Partial<MyObject>): Array<MyObject>{
+                                          patch: Partial<ObjectShape>): Array<ObjectShape>{
     const copyArray = [...initialArray]
-
     for(const i in copyArray){
         if(copyArray[i][key] === value){
             copyArray[i] = {...copyArray[i], ...patch}
@@ -36,4 +35,4 @@ export function updateObjectInArray<MyObject>(initialArray: Array<MyObject>,
     return copyArray
 }
 
-// updateObjectInArray<MyObject>(arr, "title", "title1", {title: "changedTitle"})
+// updateObjectInArray<ObjectShape>(arr, "title", "title1", {title: "changedTitle"})

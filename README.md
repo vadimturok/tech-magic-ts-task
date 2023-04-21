@@ -40,6 +40,9 @@ To create production build run following command:
 npm run build
 ```
 
+## IMPORTANT!
+To see the resulting array of Task #2 open devtools('F12') on deployed application site.
+
 
 ## Project Status
 Project is: _completed_

@@ -1,6 +1,6 @@
-# Tech Magic JS Task 2
+# Tech Magic TS Task
 > Live demo
->  [_here_](https://vadimturok.github.io/tech-magic-task-2/). <!-- If you have the project hosted somewhere, include the link here. -->
+>  [_here_](https://vadimturok.github.io/tech-magic-ts-task/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [Technologies Used](#technologies-used)
@@ -13,7 +13,8 @@
 ## Technologies Used
 - HTML
 - CSS
-- JavaScript
+- TypeScript
+- Axios
 - Webpack
 
 
@@ -21,7 +22,13 @@
 To run application locally:
 
 1. Clone project on your local machine.
-2. Run following command to start application in development mode:
+2. Install all dependencies:
+
+```
+npm install
+```
+
+3. Run following command to start application in development mode:
 
 ```
 npm run start

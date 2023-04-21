@@ -1,6 +1,6 @@
 import {PostService} from "./post.service";
+import {updateObjectInArray, ObjectShape, arr} from "../task-2/updateObjectInArray";
 import './css/index.css'
-import {arr, updateObjectInArray, MyObject} from '../task-2/updateObjectInArray'
 
 const postsList = document.querySelector('.posts')!
 
@@ -22,4 +22,4 @@ const showPosts = async () => {
 }
 
 showPosts()
-console.log(updateObjectInArray<MyObject>(arr, "title", "title1", {title: "changedTitle"}))
+console.log(updateObjectInArray<ObjectShape>(arr, "title", "title1", {title: "changedTitle"}));
